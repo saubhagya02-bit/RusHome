@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Dream Rental</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<body>
+    <header class="header">
+        <img src="Images/logo.jpg" alt="RusHome Logo" class="logo">
+        <nav class="navbar">
+            
+            <ul class="nav-links">
+                <li><a href="#home"></i>Home</a></li>
+                <li><a href="#properties" ">Properties</a></li>
+                <li><a href=" #about">About</a></li>
+                <li><a href="#contact" ">Contact</a></li>
+                <div class=" Log In">
+                        <a href="#login" onclick="openLoginModal()">Log In</a>
+                </div>
+            </ul>
+            <div class="menuIcon">&#9776;</div>
+        </nav>
+
+    </header>
+
+    <!--Linked Home-->
+
+    <div class="container">
+        <div class="img-container">
+            <img src="Images/Main.jpg" alt="">
+            <img src="Images/Main-1.jpg" alt="">
+            <img src="Images/Main-2.jpg" alt="">
+        </div>
+    </div>
+    <div class="content" id="home">
+        <h1><b>Find Your Perfect Rental Home</b></h1>
+        <b>Whether you're looking for a cozy apartment, a family house or a luxury villa, we make it easy to find the
+            perfect rental.</b>
+
+        <div>
+            <button><span></span><a href="#properties" style="color: white;"><b>Explore Properties</b></a></button>
+        </div>
+    </div>
+
+    <section id="properties" class="property-list">
+        <br>
+        <h2 style="color: #009688;">Available Properties</br></h2>
+
+        <div class="scroll-box">
+            <div class="property-grid">
+                <div class="property-card" data-location="Colombo" data-price="250K">
+                    <img src="Images/property-2.jpg" alt=">Modern Apartment in Colombo ">
+                    <h3>Modern Apartment in <br>Colombo</br></h3>
+                    <p>LKR250 000/month</p>
+                    <button class="view-details" data-id="2">View Details</button>
+                </div>
+                <div class="property-card " data-location="Kadawatha" data-price="200K">
+                    <img src="Images/property-3.jpg" alt="Modern Apartment in Kadawatha">
+                    <h3>Modern Apartment in <br>Kadawatha</br></h3>
+                    <p>LKR200 000/month</p>
+                    <button class="view-details" data-id="3">View Details</button>
+                </div>
+                <div class="property-card " data-location="Kandy" data-price="100K">
+                    <img src="Images/property-4.jpg" alt="Modern Apartment in Kandy">
+                    <h3>Modern Apartment in <br>Kandy</br></h3>
+                    <p>LKR100 000/month</p>
+                    <button class="view-details" data-id="4">View Details</button>
+                </div>
+                <div class="property-card " data-location="Nuwara Eliya" data-price="50K">
+                    <img src="Images/property-5.jpg" alt="Modern Apartment in Nuwara Eliya">
+                    <h3>Modern Apartment in <br>Nuwara Eliya</br></h3>
+                    <p>LKR50 000/month</p>
+                    <button class="view-details" data-id="5">View Details</button>
+                </div>
+            </div>
+    
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 style="color: #009688;">About RusHome</h2>
+        <p><i>RusHome is your trusted platform for finding rental properties across the country.
+                <br>We connect tenants with trusted landlords, offering a wide range of affordable and premium homes to
+                suit every lifestyle.</br>
+                Whether you're looking for a cozy apartment or a spacious family home, RusHome makes your housing search
+                easy, fast and secure.</i></p>
+
+        <img src="Images/property-1.jpg" alt="property-1">
+
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label>Name: <input type="text" name="name" required></label>
+            <label>Email: <input type="email" name="email" required></label>
+            <label>Message: <textarea name="message" required></textarea></label>
+            <button type="submit" class="Btn">Send</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+            <h2>RusHome</h2>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#properties">Properties</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-box">
+                <h3>Locations</h3>
+                <a href="#properties">Colombo</a>
+                <a href="#properties">Kadawatha</a>
+                <a href="#properties">Kandy</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <a href="#">+94 769 379 125</a>
+                <a href="#">ushanisaubhagya02@gmail.com</a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <p>&copy; 2025 RusHome. All Rights Reserved</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeLoginModal()">&times;</span>
+            <h2>Log In</h2>
+            <form>
+                <label>Enter Your Email Address:</label>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <label>Password:</label>
+                <div class="input-box">
+                    <input type="password" placeholder="Enter password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-box">
+                    <a href="#">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </div>
+
+                <div class="register-link">
+                    <p>Don't have an account? <a href="SingUp.html">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script defer src="script.js"></script>
+</body>
+
+</html>
